@@ -13,3 +13,4 @@ class SpindlerBattery(Car, ABC):
         last_service_date = datetime.strptime(self.last_service_date, '%Y-%m-%d')
         days_since_last_service = (self.current_date - last_service_date).days
         return days_since_last_service > 730
+
